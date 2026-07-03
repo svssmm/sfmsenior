@@ -1,16 +1,17 @@
-import type { Metadata } from "next";
-import type { ReactNode } from "react";
-import "./globals.css";
+import Hero from "@/components/Hero";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import AnnouncementsList from "@/components/AnnouncementsList";
+import EventsList from "@/components/EventsList";
 
-export const metadata: Metadata = {
-  title: "SFM Seniors Tripoli",
-  description: "The official platform for Saint Famille Maroun Tripoli Seniors.",
-};
-
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default function Home() {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className="antialiased">{children}</body>
-    </html>
+    <main className="min-h-screen bg-sfm-white flex flex-col">
+      <Navbar />
+      <Hero />
+      <AnnouncementsList />
+      <EventsList />
+      <Footer />
+    </main>
   );
 }
