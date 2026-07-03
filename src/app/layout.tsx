@@ -1,17 +1,22 @@
-import Hero from "@/components/Hero";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import AnnouncementsList from "@/components/AnnouncementsList";
-import EventsList from "@/components/EventsList";
+import type { Metadata } from "next";
+import type { ReactNode } from "react";
+import "./globals.css";
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: "SFM Seniors Tripoli",
+  description: "The official platform for Saint Famille Maroun Tripoli Seniors.",
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
+
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <main className="min-h-screen bg-sfm-white flex flex-col">
-      <Navbar />
-      <Hero />
-      <AnnouncementsList />
-      <EventsList />
-      <Footer />
-    </main>
+    <html lang="en" className="scroll-smooth">
+      <body className="antialiased">{children}</body>
+    </html>
   );
 }
