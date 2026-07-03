@@ -2,10 +2,10 @@ import { MapPin, Info } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-sfm-dark text-white pt-16 pb-8 px-6">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-12 border-b border-sfm-mid/20 pb-12">
+    <footer className="bg-sfm-dark text-white pt-12 sm:pt-16 pb-8 px-4 sm:px-6">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 sm:gap-12 border-b border-sfm-mid/20 pb-8 sm:pb-12">
         <div>
-          <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+          <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 flex items-center gap-2">
             SFM SENIORS
           </h3>
           <p className="text-gray-400 text-sm leading-relaxed">
@@ -15,7 +15,7 @@ export default function Footer() {
         </div>
         
         <div>
-          <h4 className="font-bold mb-4 flex items-center gap-2 uppercase text-xs tracking-widest text-sfm-mid">
+          <h4 className="font-bold mb-3 sm:mb-4 flex items-center gap-2 uppercase text-xs tracking-widest text-sfm-mid">
             Location
           </h4>
           <div className="flex gap-3 text-gray-400 text-sm">
@@ -28,7 +28,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="font-bold mb-4 flex items-center gap-2 uppercase text-xs tracking-widest text-sfm-mid">
+          <h4 className="font-bold mb-3 sm:mb-4 flex items-center gap-2 uppercase text-xs tracking-widest text-sfm-mid">
             Terms & Conditions
           </h4>
           <div className="flex gap-3 text-gray-400 text-sm">
@@ -42,7 +42,7 @@ export default function Footer() {
         </div>
       </div>
       
-      <div className="max-w-7xl mx-auto mt-8 flex justify-between items-center text-xs text-gray-500">
+      <div className="max-w-7xl mx-auto mt-6 sm:mt-8 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-gray-500 text-center sm:text-left">
         <p>© {new Date().getFullYear()} SFM Seniors Tripoli. All rights reserved.</p>
         <p>Made with ❤️ for the Seniors</p>
       </div>
